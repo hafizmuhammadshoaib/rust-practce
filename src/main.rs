@@ -1,9 +1,10 @@
 mod calculator;
-mod todo;
-mod oop;
-mod hashmap;
 mod error_handling;
-use std::env;
+mod hashmap;
+mod oop;
+mod threads;
+mod todo;
+mod tokio_practice;
 
 struct User {
     name: String,
@@ -37,8 +38,9 @@ impl User {
     }
 }
 fn main() {
-   error_handling::main();
+    tokio_practice::main();
 }
+
 
 fn pattern_matching(number: i32) -> Weekday {
     let day = match number {

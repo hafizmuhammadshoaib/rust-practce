@@ -5,3 +5,6 @@ edition = "2024"
 
 [dependencies]
 thiserror = "1.0"
+tokio = { version = "1.38", features = ["full"] }
+futures = "0.3"  # Latest stable version
+rand = "0.8"
